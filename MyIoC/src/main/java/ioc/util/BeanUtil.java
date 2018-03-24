@@ -4,6 +4,10 @@ import net.sf.cglib.proxy.Enhancer;
 import net.sf.cglib.proxy.NoOp;
 
 import java.lang.reflect.Constructor;
+import java.util.HashMap;
+import java.util.Hashtable;
+import java.util.Vector;
+import java.util.concurrent.ConcurrentHashMap;
 
 /**
  * Created by dela on 3/1/18.
@@ -24,5 +28,6 @@ public class BeanUtil {
         } else {
             return (T) enhancer.create(constructor.getParameterTypes(), args);
         }
+
     }
 }

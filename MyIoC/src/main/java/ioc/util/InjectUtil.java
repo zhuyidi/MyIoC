@@ -6,7 +6,12 @@ import java.lang.reflect.Field;
  * Created by dela on 3/1/18.
  */
 
-// 通过反射机制来完成依赖注入
+// 完成依赖注入
 public class InjectUtil {
-//    public static void injectObject(Field field, Object object, )
+    public static void injectField(Field field,Object obj,Object value) throws IllegalAccessException {
+        if(field != null) {
+            field.setAccessible(true);
+            field.set(obj, value);
+        }
+    }
 }

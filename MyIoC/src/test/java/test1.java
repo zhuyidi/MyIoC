@@ -16,9 +16,13 @@ public class test1 {
 //        } catch (InterruptedException e) {
 //            e.printStackTrace();
 //        }
+//
+//
+//        Map<String, String> map = new HashMap<String, String>();
+//        System.out.println(map.get("123"));
 
-        Map<String, String> map = new HashMap<String, String>();
-        System.out.println(map.get("123"));
+        String a = "123";
+        a.toCharArray();
 
     }
 }
